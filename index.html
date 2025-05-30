@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shravy Technologies - About Us</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0077ff;
+      --background: #f5f8ff;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--background);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0077ff, #00c4ff);
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      top: -50px;
+      left: -50px;
+      z-index: 1;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin-top: 1rem;
+      font-size: 2.8rem;
+      font-weight: 700;
+      position: relative;
+      z-index: 2;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      z-index: 2;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: -4rem auto 2rem;
+      padding: 2.5rem;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section li {
+      margin-bottom: 0.8rem;
+    }
+
+    section li i {
+      margin-right: 8px;
+      color: var(--primary);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      font-size: 1.6rem;
+      color: #444;
+      transition: 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+
+      .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocKfrhu_3PqU-5FCKTHKDpnrICjvjqzJDQLlPuAU5JdpxjyMehk=s288-c-no" alt="Rushi Profile" />
+    <h1>Shravy Technologies</h1>
+    <p>Code Indian. Build Global. 🚀</p>
+  </header>
+
+  <div class="container" data-aos="fade-up">
+    <section>
+      <h2><i class="fas fa-user"></i> Founder</h2>
+      <p>Hey! I’m <strong>Rushi</strong>, the solo founder of Shravy Technologies. I started this on <strong>October 15, 2024</strong> from Amreli, Gujarat 🇮🇳. My vision is to put Indian innovation on the global map 🌍 through real tech — not hype.</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-code"></i> What We Do</h2>
+      <ul>
+        <li><i class="fas fa-globe"></i> Build fast, elegant websites & digital tools</li>
+        <li><i class="fas fa-brain"></i> Develop LLMs trained for India (goal)</li>
+        <li><i class="fas fa-search"></i> Built our own search engine: WebGoto</li>
+        <li><i class="fas fa-shield-alt"></i> Spread cybersecurity & IT knowledge</li>
+        <li><i class="fas fa-hand-holding-heart"></i> Help others learn, grow, and build</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-location-dot"></i> Where We’re Based</h2>
+      <p>We’re from <strong>Amreli, Gujarat</strong> — but our tech dreams are galaxy-sized 🌌</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-link"></i> Connect With Me</h2>
+      <div class="social-icons">
+        <a href="https://github.com/rrbhanderi05" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/rushikeshpatel05/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Shravy Technologies — Made with 🔥 in India by Rushi.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
